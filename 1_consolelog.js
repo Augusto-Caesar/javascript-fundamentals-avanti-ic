@@ -12,5 +12,5 @@ const user ={
     name: "Augusto Cesar",
     age: 27,
     favoriteLanguage: "Java"
-};
-console.log(user.favoriteLanguage);
+};//object declaration, const variables are final
+console.log(user.favoriteLanguage);//objects are accessed by depth, in which each "." represents a layer
