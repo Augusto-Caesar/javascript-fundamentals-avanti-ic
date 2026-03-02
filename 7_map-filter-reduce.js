@@ -20,8 +20,10 @@ const oddNumbers = values.filter(num => num % 2 != 0);
 console.log(oddNumbers);
 
 //the method Filter will... Filter an array based on the conditions you specify for it.
-//in this case it's filtering only odd numbers from an array, below it filters only the adults from the 
-//users array
+//in this case it's filtering only odd numbers from an array, below it filters only the adults from the users array
+//this method also does not alters the original array, however the resulting array will likely be smaller than the original
+//it returns a boolean for your condition, if true it will store the value inside its own array
+//if false it shall not store the value
 
 const adultUser = users.filter(user => user.age > 17);
 console.log(adultUser);
