@@ -27,4 +27,11 @@ newElement.textContent = "A brand new paragraph made wholly through JS!";
 divFeature.append(newElement);
 //below method works the same as above, but in a simpler way
 divFeature.insertAdjacentHTML("beforeend", `<p>Another paragraph made wholly in JS!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>`)//template strings allow to breakline
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>`);//template strings allow to breakline
+
+const divLinks = document.querySelectorAll("#divLinks a");
+for(link of divLinks){
+    link.classList.add("feature-links");
+    console.log(link.getAttribute("href"));//this log only appears on the browser console
+    link.target= "_blank";
+};
