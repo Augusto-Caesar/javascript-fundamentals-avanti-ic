@@ -14,3 +14,15 @@ const users = [
 const userNames = users.map(users => users.name); //for this one, the variable has to be the name of the array, in order to access the depth.
 //in this case the method is literally "mapping" only the property "name" from the array of objects.
 console.log(userNames);
+
+
+const oddNumbers = values.filter(num => num % 2 != 0);
+console.log(oddNumbers);
+
+//the method Filter will... Filter an array based on the conditions you specify for it.
+//in this case it's filtering only odd numbers from an array, below it filters only the adults from the 
+//users array
+
+const adultUser = users.filter(user => user.age > 17);
+console.log(adultUser);
+
